@@ -1,0 +1,25 @@
+{% extends 'flatpages/default.html' %}
+{% load static %}
+
+{% block idpage %}home{% endblock %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+{% block header %}
+Добро пожаловать на новостной сайт!
+{% endblock %}
+
+{% block count %}
+<br>
+{% endblock %}
+
+{% block image %}
+{% static 'assets/home.jpg' %}
+{% endblock %}
+
+{% block content %}
+<p class="fs-5 mb-4">Главную страницу новостного сайта. Для просмотра новостей перейдите к пункту меню <a class="content-link" href="/news/">Новости</a>.</p>
+<p class="fs-5 mb-4">Школа основана в 2016. Обучает по направлениям: Фронтенд-разработчик, PHP-разработчик, Python-разработчик, Java-разработчик, Go-разработчик, Инженер по ручному тестированию, Аналитик данных</p>
+{% endblock %}
